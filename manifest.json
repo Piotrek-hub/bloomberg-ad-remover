@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Bloomber Ad Remover",
+    "version": "1.0",
+    "description": "Removes top ad from bloomberg.com",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.bloomberg.com/*"
+            ],
+            "js": [
+                "remover.js"
+            ]
+        }
+    ]
+}
